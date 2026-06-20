@@ -7,14 +7,11 @@
 
 Example:
 ```txt
-SELECT order_date,
-    order_item_product_id,
-    order_revenue,
-    rank() OVER(ORDER BY order_revenue DESC) AS rnk,
-    dense_ranK() OVER(ORDER BY order_revenue DESC) AS drnk
-FROM daily_product_revenue
-WHERE order_date = '2014-01-01 00:00:00.0'
-ORDER BY 1;
+SELECT student_id, student_score,
+    rank() OVER(ORDER BY student_score DESC) AS rnk,
+    dense_ranK() OVER(ORDER BY student_score DESC) AS drnk
+FROM student_scores
+ORDER BY student_scores DESC;
 ```
 
 Output:
