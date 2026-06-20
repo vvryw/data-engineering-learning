@@ -37,7 +37,7 @@ Output:
 SELECT * FROM (
     SELECT ...
         rank() OVER(ORDER BY ... DESC) AS rnk,
-        dense_ranK() OVER(ORDER BY ... DESC) AS rnk
+        dense_ranK() OVER(ORDER BY ... DESC) AS drnk
     FROM ... WHERE ...
 ) AS q 
 WHERE drnk <= 5;
