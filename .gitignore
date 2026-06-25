@@ -1,2 +1,4 @@
 # data / resource
 resource/
+
+.venv/
